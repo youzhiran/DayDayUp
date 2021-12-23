@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.devyi.pojo.Score" table="Score">
+        <!--主键自增策略-->
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <!--属性映射-->
+        <property name="name" column="name"/>
+        <property name="kecheng" column="kecheng"/>
+        <property name="fenshu" column="fenshu"/>
+    </class>
+</hibernate-mapping>
